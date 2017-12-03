@@ -73,10 +73,3 @@ class Balance(object):
     def _get_btc_jpy(self):
         return self._btc_jpy
 
-
-#print(balance_to_jpy())
-#balance = Balance()
-history = History()
-#print(balance.get())
-#print(balance.total())
-print(history.total_deposits())

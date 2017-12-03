@@ -12,4 +12,8 @@ def history():
     o = order.Order(secret_key=coincheck_secret_key, access_key=coincheck_access_key)
     return o.history()
 
-print(buy_market(100))
+jpy = 0.0
+for h in history()['transactions']:
+    jpy += float(h['funds']['btc'])
+
+print (jpy)
